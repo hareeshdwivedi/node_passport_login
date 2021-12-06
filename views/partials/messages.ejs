@@ -1,0 +1,29 @@
+%3C%25+if%28locals.errors%29%7B+%25%3E+%3C%25+errors.forEach%28function%28error%29+%7B+%25%3E
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  ++%3C%25%3D+error.msg+%25%3E
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+%3C%25+%7D%29%3B+%25%3E+%3C%25+%7D+%25%3E+%3C%25+if%28success_msg+%21%3D+%27%27%29%7B+%25%3E
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  ++%3C%25%3D+success_msg+%25%3E
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+%3C%25+%7D+%25%3E+%3C%25+if%28error_msg+%21%3D+%27%27%29%7B+%25%3E
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  ++%3C%25%3D+error_msg+%25%3E
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+%3C%25+%7D+%25%3E+%3C%25+if%28error+%21%3D+%27%27%29%7B+%25%3E
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  ++%3C%25%3D+error+%25%3E
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+%3C%25+%7D+%25%3E
